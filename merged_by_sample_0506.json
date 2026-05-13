@@ -2402,5 +2402,505 @@
         }
       ]
     }
+  },
+  "00839-zt1RVoi7PcG_006_004": {
+    "sample_id": "00839-zt1RVoi7PcG_006_004",
+    "image": "sources/00839-zt1RVoi7PcG_006_004.png",
+    "audio": "sources/00839-zt1RVoi7PcG_006_004.wav",
+    "tasks": {
+      "AS_sound_recognition": [
+        {
+          "Q": "Identify the sound you hear. Choose one from: ['woman speaking', 'man speaking', 'eletric blender running', 'typing on typewriter', 'slot machine sound', 'bathroom ventilation fan running', 'vacuum cleaner noise', 'cricket chirping', 'pigeon, dove cooing', 'mouse pattering'].",
+          "A": "eletric blender running"
+        }
+      ],
+      "EG_correspondence": [
+        {
+          "Q": "From the camera’s perspective, which object is at the location of the sound? Pick one option; select None if no object in view is producing sound:['None', 'bed', 'bed table', 'bedside lamp', 'blinds', 'book', 'cabinet', 'ceiling vent', 'chair', 'chandelier', 'cricket', 'dog bed', 'door', 'door frame', 'electric_blender on the front-left', 'electric_blender on the front-right', 'female', 'footstool', 'lamp table', 'mirror', 'photo', 'pillow', 'rug', 'sensor', 'tv', 'unknown', 'wall electronics', 'wall hanging decoration', 'window', 'window frame'].",
+          "A": "None",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "Using the current view, determine which direction the sound source is coming from. Choose one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front-right",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "From the current viewpoint, estimate how far the sound source is. Select below and answer: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "J",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "Considering the camera perspective, where is the sound coming from? Select one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "front-right",
+          "target": "the sound"
+        }
+      ],
+      "EG_visibility": [
+        {
+          "Q": "From this perspective, is the sound source in sight? Answer with ['yes', 'no']",
+          "A": "no",
+          "target": "the sound source"
+        }
+      ],
+      "RR_caption": [
+        {
+          "Q": "Produce captions that specify the direction and visibility of each sound source. Do not output keywords, lists, or comma-separated fragments. For each sound source, include: (1) the sound event, (2) the direction, (3) whether it is visible, and (4) if not visible, its location. If multiple sound sources are detected, describe all of them separately. Use only the provided options to fill the sentences. Options: sound event: ['woman speaking', 'man speaking', 'eletric blender running', 'typing on typewriter', 'slot machine sound', 'bathroom ventilation fan running', 'vacuum cleaner noise', 'cricket chirping', 'pigeon, dove cooing', 'mouse pattering']; direction: [front, front-right, right, back-right, back, back-left, left, front-left]; visibility: [visible, not visible]; location: [In an adjacent room / out of the field of view in front / out of the field of view behind you / hidden behind object; specify the object, e.g., bed].",
+          "A": "A single sound source is present. The sound event is eletric blender running. It is located in the front-right direction. It is not visible in the scene. It is hidden behind the wall."
+        }
+      ],
+      "RR_hidden_source": [
+        {
+          "Q": "The sound of the sound is audible. Where is it coming from? Choose one from: (A) Out of the field of view in front (B) In an adjacent room (C) Out of the field of view behind you (D) Hidden behind the wall (E) Hidden behind bed",
+          "A": "(D)",
+          "target": "the sound",
+          "Options": [
+            "(A) Out of the field of view in front",
+            "(B) In an adjacent room",
+            "(C) Out of the field of view behind you",
+            "(D) Hidden behind the wall",
+            "(E) Hidden behind bed"
+          ]
+        }
+      ],
+      "RR_loudness": [
+        {
+          "Q": "By moving to bed table, does the sound become louder or quieter? Choose one from: ['louder', 'quieter'].",
+          "A": "louder",
+          "target": "the sound"
+        }
+      ]
+    }
+  },
+  "00824-Dd4bFSTQ8gi_007_000": {
+    "sample_id": "00824-Dd4bFSTQ8gi_007_000",
+    "image": "sources/00824-Dd4bFSTQ8gi_007_000.png",
+    "audio": "sources/00824-Dd4bFSTQ8gi_007_000.wav",
+    "tasks": {
+      "AG_direction": [
+        {
+          "Q": "If you are located at the bed facing the piano, determine which direction the sound source is coming from. Choose one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "left",
+          "target": "the sound source"
+        }
+      ],
+      "AG_distance": [
+        {
+          "Q": "If you stand by the bed facing the piano, what is the distance to the sound source? Choose one distance bin from the options below, then answer as: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "B",
+          "target": "the sound source"
+        }
+      ],
+      "AG_localization": [
+        {
+          "Q": "Standing next to the bed and facing the piano, which direction does the sound come from? Select one from: ['front-left','back-left','back-right', 'front-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "Based on this perspective, what direction is the sound source coming from? Select one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front-left",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "From the active camera angle, how far is the sound source located? Pick a bin and reply: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "D",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "From the visible perspective, which direction is the sound coming from? Choose one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "EG_visibility": [
+        {
+          "Q": "From the visible shot, can the sound source be seen? Answer with ['yes', 'no']",
+          "A": "no",
+          "target": "the sound source"
+        }
+      ],
+      "RR_caption": [
+        {
+          "Q": "Describe the given sound source(s), including their direction and visibility. Write the output in complete sentences only. Do not output keywords, lists, or comma-separated fragments. For each detected sound source, include: (1) the sound event, (2) the direction, (3) whether it is visible, and (4) if not visible, its location. If multiple sound sources are present, describe all of them separately. Use only the provided options to fill the sentences. Options: sound event: ['playing piano', 'baby crying', 'cricket chirping', 'playing ukulele', 'mouse pattering', 'alarm clock ringing', 'woman speaking', 'slot machine sound', 'toilet flushing', 'mouse squeaking']; direction: [front, front-right, right, back-right, back, back-left, left, front-left]; visibility: [visible, not visible]; location: [In an adjacent room / out of the field of view in front / out of the field of view behind you / hidden behind object; specify the object, e.g., bed].",
+          "A": "The sound event is cricket chirping. It is located in the front-left direction. It is not visible in the scene. It is hidden behind bed."
+        }
+      ],
+      "RR_hidden_source": [
+        {
+          "Q": "You perceive the sound. Where is the source of this sound? Choose one from: (A) Hidden behind the wall (B) Out of the field of view behind you (C) Out of the field of view in front (D) Hidden behind bed (E) In an adjacent room",
+          "A": "(D)",
+          "target": "the sound",
+          "Options": [
+            "(A) Hidden behind the wall",
+            "(B) Out of the field of view behind you",
+            "(C) Out of the field of view in front",
+            "(D) Hidden behind bed",
+            "(E) In an adjacent room"
+          ]
+        }
+      ],
+      "RR_loudness": [
+        {
+          "Q": "If you relocate to bed, does the sound grow louder or quieter? Select one from: ['louder', 'quieter'].",
+          "A": "louder",
+          "target": "the sound"
+        }
+      ],
+      "RR_proximity": [
+        {
+          "Q": "Which object appears closest to the sound source? Choose one from: ['piano', 'bed', 'ukulele']",
+          "A": "bed",
+          "target": "the sound source"
+        }
+      ]
+    }
+  },
+  "00802-wcojb4TFT35_010_002": {
+    "sample_id": "00802-wcojb4TFT35_010_002",
+    "image": "sources/00802-wcojb4TFT35_010_002.png",
+    "audio": "sources/00802-wcojb4TFT35_010_002.wav",
+    "tasks": {
+      "AG_direction": [
+        {
+          "Q": "If you are by the door frame looking at the violin, which direction is the sound source coming from? Choose one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front-left",
+          "target": "the sound source"
+        }
+      ],
+      "AG_distance": [
+        {
+          "Q": "If you stand by the door frame facing the violin, what is the distance to the sound source? Choose one distance bin from the options below, then answer as: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "G",
+          "target": "the sound source"
+        }
+      ],
+      "AG_localization": [
+        {
+          "Q": "If positioned by the door frame toward the violin, which way is the sound coming from? Choose one from: ['front-left','back-left','back-right', 'front-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "AS_sound_recognition": [
+        {
+          "Q": "What is the sound you hear? Choose one from: ['dog growling', 'man speaking', 'baby crying', 'playing drum kit', 'playing violin, fiddle', 'playing ukulele', 'eletric blender running', 'vehicle horn', 'child speaking', 'printer printing'].",
+          "A": "eletric blender running"
+        }
+      ],
+      "EG_correspondence": [
+        {
+          "Q": "From the camera’s current position, which object best aligns with the source location of the sound? Choose one from the options; select None if no visible object is producing sound:['None', 'bed', 'bedside cabinet', 'bedside lamp', 'blanket', 'ceiling fan', 'child', 'door frame', 'drum', 'lamp', 'pillow', 'printer', 'ukulele', 'violin', 'window'].",
+          "A": "None",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "Based on the active view, determine the direction the sound source is coming from. Choose one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front-left",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "From the camera’s perspective, estimate the distance to the sound source. Choose a bin below and answer: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "B",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "From the present camera view, where does the sound come from? Select one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "EG_visibility": [
+        {
+          "Q": "From the present camera view, does the sound source appear? Answer with ['yes', 'no']",
+          "A": "no",
+          "target": "the sound source"
+        }
+      ],
+      "RR_caption": [
+        {
+          "Q": "Generate captions for the given sound source(s), specifying direction and visibility. Write the output in complete sentences only. Do not output keywords, lists, or comma-separated fragments. For each sound source, include: (1) the sound event, (2) the direction, (3) whether it is visible, and (4) if not visible, its location. If two or more sound sources are detected, describe them separately. Use only the provided options to fill the sentences. Options: sound event: ['dog growling', 'man speaking', 'baby crying', 'playing drum kit', 'playing violin, fiddle', 'playing ukulele', 'eletric blender running', 'vehicle horn', 'child speaking', 'printer printing']; direction: [front, front-right, right, back-right, back, back-left, left, front-left]; visibility: [visible, not visible]; location: [In an adjacent room / out of the field of view in front / out of the field of view behind you / hidden behind object; specify the object, e.g., bed].",
+          "A": "The sound event is eletric blender running. It is coming from the front-left direction. It is not visible in the scene. It is out of the field of view in front."
+        }
+      ],
+      "RR_hidden_source": [
+        {
+          "Q": "You can hear the sound. Where is the source? Choose one from: (A) Out of the field of view in front (B) Out of the field of view behind you (C) Hidden behind the wall (D) In an adjacent room (E) Hidden behind bed",
+          "A": "(A)",
+          "target": "the sound",
+          "Options": [
+            "(A) Out of the field of view in front",
+            "(B) Out of the field of view behind you",
+            "(C) Hidden behind the wall",
+            "(D) In an adjacent room",
+            "(E) Hidden behind bed"
+          ]
+        }
+      ],
+      "RR_loudness": [
+        {
+          "Q": "If you approach door frame, will the sound sound louder or quieter? Select one from: ['louder', 'quieter'].",
+          "A": "quieter",
+          "target": "the sound"
+        }
+      ],
+      "RR_proximity": [
+        {
+          "Q": "Which object is directly closest to the sound source? Choose one from: ['blanket', 'ukulele', 'printer', 'violin', 'bed', 'child', 'drum', 'pillow', 'door frame']",
+          "A": "child",
+          "target": "the sound source"
+        }
+      ]
+    }
+  },
+  "00800-TEEsavR23oF_008_004": {
+    "sample_id": "00800-TEEsavR23oF_008_004",
+    "image": "sources/00800-TEEsavR23oF_008_004.png",
+    "audio": "sources/00800-TEEsavR23oF_008_004.wav",
+    "tasks": {
+      "AS_sound_recognition": [
+        {
+          "Q": "What is the sound you hear? Choose one from: ['hedge trimmer running', 'bee, wasp, buzzing', 'playing acoustic guitar', 'cat meowing', 'cell phone buzzing', 'playing saxophone', 'cupboard opening or closing', 'slot machine sound', 'sewing machine sound', 'mosquito buzzing'].",
+          "A": "playing saxophone"
+        }
+      ],
+      "EG_correspondence": [
+        {
+          "Q": "From this perspective, which visible object is aligned with the sound? Pick one; select None if no object in view is producing sound:['None', 'alarm', 'cellphone', 'door', 'doormat', 'saxophone on the front-right', 'unknown', 'window', 'window curtain', 'window frame'].",
+          "A": "None",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "Based on the active view, determine the direction the sound source is coming from. Choose one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front-left",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "Based on the shown view, what is the distance bin of the sound source? Reply: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "D",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "Based on the present view, which direction is the sound happening from? Choose one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "EG_visibility": [
+        {
+          "Q": "Using the current viewpoint, is the sound source visible? Answer with ['yes', 'no']",
+          "A": "no",
+          "target": "the sound source"
+        }
+      ],
+      "RR_caption": [
+        {
+          "Q": "Write captions describing the sound source(s), along with their direction and visibility. Do not output keywords, lists, or comma-separated fragments. For each detected sound source, include: (1) the sound event, (2) the direction, (3) whether it is visible, and (4) if not visible, its location. When more than one sound source is present, describe each source separately. Use only the provided options to fill the sentences. Options: sound event: ['hedge trimmer running', 'bee, wasp, buzzing', 'playing acoustic guitar', 'cat meowing', 'cell phone buzzing', 'playing saxophone', 'cupboard opening or closing', 'slot machine sound', 'sewing machine sound', 'mosquito buzzing']; direction: [front, front-right, right, back-right, back, back-left, left, front-left]; visibility: [visible, not visible]; location: [In an adjacent room / out of the field of view in front / out of the field of view behind you / hidden behind object; specify the object, e.g., bed].",
+          "A": "The sound event is playing saxophone. It is located in the front-left direction. The sound source is not visible. It is hidden behind the wall."
+        }
+      ],
+      "RR_hidden_source": [
+        {
+          "Q": "the sound can be heard. Where is the sound source located? Choose one from: (A) Out of the field of view behind you (B) In an adjacent room (C) Hidden behind the wall (D) Out of the field of view in front (E) Hidden behind door",
+          "A": "(C)",
+          "target": "the sound",
+          "Options": [
+            "(A) Out of the field of view behind you",
+            "(B) In an adjacent room",
+            "(C) Hidden behind the wall",
+            "(D) Out of the field of view in front",
+            "(E) Hidden behind door"
+          ]
+        }
+      ]
+    }
+  },
+  "00832-qyAac8rV8Zk_007_013": {
+    "sample_id": "00832-qyAac8rV8Zk_007_013",
+    "image": "sources/00832-qyAac8rV8Zk_007_013.png",
+    "audio": "sources/00832-qyAac8rV8Zk_007_013.wav",
+    "tasks": {
+      "AG_direction": [
+        {
+          "Q": "Stand beside the bee facing the desk; what direction is the source of playing piano coming from? Pick one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "left",
+          "target": "the sound source"
+        }
+      ],
+      "AG_distance": [
+        {
+          "Q": "If you are located at the bee facing the desk, how distant is the source of playing piano? Choose a bin and answer: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "B",
+          "target": "the sound source"
+        }
+      ],
+      "AG_localization": [
+        {
+          "Q": "While next to the bee facing the desk, which way is playing piano coming from? Choose one from: ['front-left','back-left','back-right', 'front-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "AS_sound_recognition": [
+        {
+          "Q": "Name the sound coming from the back-left, 1.0 meters away. Choose one from: ['mouse squeaking', 'playing piano', 'engine accelerating', 'bee, wasp, buzzing', 'typing on computer keyboard', 'baby crying', 'cell phone buzzing', 'vacuum cleaner noise', 'squishing water', 'child speaking'].",
+          "A": "child speaking"
+        }
+      ],
+      "EG_correspondence": [
+        {
+          "Q": "From the camera’s perspective, which object is at the location of the sound of child speaking? Pick one option; select None if no object in view is producing sound:['None', 'bed', 'bee', 'book', 'box', 'cabinet', 'cellphone', 'chair', 'container', 'cushion', 'desk', 'door', 'door frame', 'piano', 'picture', 'sensor', 'unknown', 'wall hanging decoration'].",
+          "A": "None",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "Based on this perspective, what direction is the source of child speaking coming from? Select one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "left",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "From the current camera perspective, what is the distance to the source of child speaking? Choose one distance bin from the options below, then answer as: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "B",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "From the present camera view, where does child speaking come from? Select one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "back-left",
+          "target": "the sound"
+        }
+      ],
+      "EG_visibility": [
+        {
+          "Q": "From the camera’s perspective, is the source of child speaking seen? Answer with ['yes', 'no']",
+          "A": "no",
+          "target": "the sound source"
+        }
+      ],
+      "RR_caption": [
+        {
+          "Q": "Describe the given sound source(s), including their direction and visibility. Write the output in complete sentences only. Do not output keywords, lists, or comma-separated fragments. For each detected sound source, include: (1) the sound event, (2) the direction, (3) whether it is visible, and (4) if not visible, its location. If there are two or more sound sources, describe every source separately. Use only the provided options to fill the sentences. Options: sound event: ['mouse squeaking', 'playing piano', 'engine accelerating', 'bee, wasp, buzzing', 'typing on computer keyboard', 'baby crying', 'cell phone buzzing', 'vacuum cleaner noise', 'squishing water', 'child speaking']; direction: [front, front-right, right, back-right, back, back-left, left, front-left]; visibility: [visible, not visible]; location: [In an adjacent room / out of the field of view in front / out of the field of view behind you / hidden behind object; specify the object, e.g., bed].",
+          "A": "Two sound sources are present. The first sound event is child speaking. It is in the left direction and is not visible in the scene. It is out of the field of view in front. The second sound event is playing piano. It is in the front-left direction and is visible."
+        }
+      ],
+      "RR_hidden_source": [
+        {
+          "Q": "You hear child speaking. Where is the source of this sound? Choose one from: (A) Hidden behind the wall (B) In an adjacent room (C) Out of the field of view behind you (D) Hidden behind bed (E) Out of the field of view in front",
+          "A": "(E)",
+          "target": "the sound",
+          "Options": [
+            "(A) Hidden behind the wall",
+            "(B) In an adjacent room",
+            "(C) Out of the field of view behind you",
+            "(D) Hidden behind bed",
+            "(E) Out of the field of view in front"
+          ]
+        }
+      ],
+      "RR_loudness": [
+        {
+          "Q": "When at bed, will child speaking be louder or quieter? Choose one from: ['louder', 'quieter'].",
+          "A": "quieter",
+          "target": "the sound"
+        }
+      ]
+    }
+  },
+  "00827-BAbdmeyTvMZ_008_012": {
+    "sample_id": "00827-BAbdmeyTvMZ_008_012",
+    "image": "sources/00827-BAbdmeyTvMZ_008_012.png",
+    "audio": "sources/00827-BAbdmeyTvMZ_008_012.wav",
+    "tasks": {
+      "AG_direction": [
+        {
+          "Q": "Standing next to the table and facing the electric_guitar, which direction is the source of mouse pattering coming from? Select one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "front",
+          "target": "the sound source"
+        }
+      ],
+      "AG_distance": [
+        {
+          "Q": "Standing next to the table and facing the electric_guitar, what is the distance to the source of mouse pattering? Choose a bin below and answer: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "J",
+          "target": "the sound source"
+        }
+      ],
+      "AG_localization": [
+        {
+          "Q": "If you are by the table looking at the electric_guitar, which direction does mouse pattering come from? Choose one from: ['front-left','back-left','back-right', 'front-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ],
+      "AS_sound_recognition": [
+        {
+          "Q": "What sound do you hear from the front-left, 3.0 meters away? Choose one from: ['mouse pattering', 'playing ukulele', 'door slamming', 'vacuum cleaner noise', 'man speaking', 'bird squawking', 'playing cello', 'cricket chirping', 'playing electric guitar', 'telephone bell ringing'].",
+          "A": "mouse pattering"
+        }
+      ],
+      "AS_speech_recognition": [
+        {
+          "Q": "Give the exact speech. Return only the transcription in quotes.",
+          "A": "IN NOVELS THE HERO HAS OFTEN PUSHED HIS MEALS AWAY UNTASTED BUT NO STAGE HERO WOULD DO ANYTHING SO UNNATURAL AS THIS"
+        }
+      ],
+      "EG_correspondence": [
+        {
+          "Q": "From the current camera perspective, which object is spatially aligned with the sound of mouse pattering? Choose one from the options; select None if no object in view is producing sound:['None', 'bowl', 'chair', 'coffee machine', 'electric_guitar', 'kitchen counter', 'lamp', 'male', 'table'].",
+          "A": "None",
+          "target": "the sound"
+        }
+      ],
+      "EG_direction": [
+        {
+          "Q": "From the current camera view, which direction is the source of mouse pattering coming from? Select one bin from the options below. Each bin is 45° wide. Angles increase clockwise from straight ahead: front (337.5-22.5°), right (67.5-112.5°), back (157.5-202.5°), left (247.5-292.5°). Options: [front (337.5-22.5°), front-right (22.5-67.5°), right (67.5-112.5°), back-right (112.5-157.5°), back (157.5-202.5°), back-left (202.5-247.5°), left (247.5-292.5°), front-left (292.5-337.5°)]",
+          "A": "left",
+          "target": "the sound source"
+        }
+      ],
+      "EG_distance": [
+        {
+          "Q": "Based on the shown view, what is the distance bin of the source of mouse pattering? Reply: distance=<DIST_BIN>. Options: ['A(0-1 m)', 'B(1-1.5 m)', 'C(1.5-2 m)', 'D(2-2.5 m)', 'E(2.5-3 m)', 'F(3-3.5 m)', 'G(3.5-4 m)', 'H(4-4.5 m)', 'I(4.5-5 m)', 'J(>5 m)']",
+          "A": "F",
+          "target": "the sound source"
+        }
+      ],
+      "EG_localization": [
+        {
+          "Q": "Using this viewpoint, which direction is mouse pattering coming from? Choose one from: ['front-left', 'front-right', 'back-left', 'back-right'].",
+          "A": "front-left",
+          "target": "the sound"
+        }
+      ]
+    }
   }
 }
